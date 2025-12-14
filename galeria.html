@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Aleksandra Milewska">
+    <meta name="description" content="Galeria zdjęć przedstawiających różne gatunki gekonów.">
+    <meta name="keywords" content="gekony, galeria, zdjęcia, gady, jaszczurki, terarium">
+    <title>Galeria - 7 Najciekawszych Gekonów</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">strona główna</a>
+        <a href="galeria.html" class="active">galeria</a>
+        <a href="ankieta.html">ankieta</a>
+        <a href="dodatek.html">dodatkowe informacje</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <span></span>
+        </a>
+    </div>
+
+    <header class="header">
+        <div class="logo">GEKON</div>
+    </header>
+    <main>
+        <h1>Galeria Gekonów</h1>
+
+        <div id="slider-container">
+            <div id="slider">
+                <div class="slide"><img src="media/galeria1.jpeg" alt="Zdjęcie gekon 1"></div>
+                <div class="slide"><img src="media/galeria2.jpg" alt="Zdjęcie gekon 2"></div>
+                <div class="slide"><img src="media/galeria3.jpeg" alt="Zdjęcie gekon 3"></div>
+                <div class="slide"><img src="media/galeria4.jpeg" alt="Zdjęcie gekonn 4"></div>
+            </div>
+        </div>
+        <div id="slider-controls"></div>
+    </main>
+
+    <footer class="footer">
+        <p>Aleksandra Milewska | 2ta</p>
+    </footer>
+
+    <script>
+        const slider = document.getElementById('slider');
+        const slides = document.querySelectorAll('.slide');
+        const controlsContainer = document.getElementById('slider-controls');
+        let currentIndex = 0;
+
+        function updateSlider() {
+            slider.style.transform = `translateX(${-currentIndex * 100}%)`;
+            const dots = document.querySelectorAll('.slider-dot');
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentIndex);
+            });
+        }
+
+        function createControlDot(index) {
+            const dot = document.createElement('span');
+            dot.classList.add('slider-dot');
+            if (index === 0) dot.classList.add('active')
+            dot.addEventListener('click', () => {
+                currentIndex = index;
+                updateSlider();
+            });
+            return dot;
+        }
+
+        function initializeControls() {
+            slides.forEach((slide, index) => {
+                const dot = createControlDot(index);
+                controlsContainer.appendChild(dot);
+            });
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            updateSlider();
+        }
+
+        function startSlider() {
+            setInterval(nextSlide, 4000);
+        }
+
+        initializeControls();
+        startSlider();
+
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+</html>

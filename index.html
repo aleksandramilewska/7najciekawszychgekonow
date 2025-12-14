@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Aleksandra Milewska">
+    <meta name="description" content="Strona projektu przedstawiająca 7 najciekawszych gatunków gekonów świata.">
+    <meta name="keywords" content="gekony, gady, jaszczurki, gekon orzęsiony, gekon lamparci, gekon płaczący, zwierzęta">
+    <title>7 Najciekawszych Gekonów</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">strona główna</a>
+        <a href="galeria.html">galeria</a>
+        <a href="ankieta.html">ankieta</a>
+        <a href="dodatek.html">dodatkowe informacje</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <span></span>
+        </a>
+    </div>
+
+    <header class="header">
+        <div class="logo">GEKON</div>
+    </header>
+    <main>
+        <h1>7 NAJCIEKAWSZYCH GEKONÓW</h1>
+
+        <div class="container1">
+            <div class="tile1">
+                <h3>Gekon Orzęsiony</h3>
+                <img src="media/gekon-orzespiony.jpeg" alt="Gekon Orzęsiony">
+                <div class="opis-gekona">Pochodzi z Nowej Kaledonii. Charakterystyczne "rzęsy" nad oczami sprawiają, że wygląda uroczo.</div>
+            </div>
+            <div class="tile1">
+                <h3>Gekon Lamparci</h3>
+                <img src="media/gekon-lamparci.jpg" alt="Gekon Lamparci">
+                <div class="opis-gekona">Popularny gad hodowlany. Ma ruchome powieki, co jest nietypowe u gekonów.</div>
+            </div>
+            <div class="tile1">
+                <h3>Gekon Płaczący</h3>
+                <img src="media/gekon-placzacy.jpeg" alt="Gekon Płaczący">
+                <div class="opis-gekona">Samice mogą rozmnażać się bez samców. Pochodzi z rejonu Pacyfiku.</div>
+            </div>
+        </div>
+
+        <div class="container1">
+            <div class="tile1">
+                <img src="media/gekon-turecki.webp" alt="Gekon Turecki">
+                <h3>Gekon Turecki</h3>
+                <div class="opis-gekona">Świetnie przystosowany do życia na murach i w suchym środowisku.</div>
+            </div>
+            <div class="tile1">
+                <img src="media/gekon-williamsa.jpeg" alt="Gekon Williamsa">
+                <h3>Gekon Williamsa</h3>
+                <div class="opis-gekona">Mały, żywo kolorowy gekon z Madagaskaru, często hodowany w grupach.</div>
+            </div>
+            <div class="tile1">
+                <img src="media/gekon-zlocisty.jpeg" alt="Gekon Złocisty">
+                <h3>Gekon Złocisty</h3>
+                <div class="opis-gekona">Jego zielone ciało pokryte jest żółtymi plamkami, przypominającymi złoty pył.</div>
+            </div>
+        </div>
+
+        <div class="container1">
+            <div class="tile1">
+                <img src="media/gekon-toke.jpeg" alt="Gekon Toke">
+                <h3>Gekon Toke</h3>
+                <div class="opis-gekona">Jeden z największych gekonów. Słynie z głośnych odgłosów i silnego uścisku.</div>
+            </div>
+        </div>
+
+        <nav class="additional-menu">
+            <h2>Dowiedz się więcej!</h2>
+            <a href="https://egzotic-room.com/2024/01/03/poradnik-gekon-orzesiony/" target="_blank">Więcej o gekonie orzęsionym</a>
+            <a href="https://gadzisklep.pl/blog/gekony-lamparcie/gekon-lamparci-wszystko-o-hodowli-terrarium-i-cenie" target="_blank">Więcej o gekonie lamparcim</a>
+            <a href="https://gadzisklep.pl/gekony/gekon-placzacy" target="_blank">Więcej o gekonie płaczącym</a>
+            <a href="https://www.terrarium.com.pl/hemidactylus-turcicus-gekon-turecki/" target="_blank">Więcej o gekonie tureckim</a>
+            <a href="https://terranpolska.pl/aktualnosci/n/49/lygodactylus-williamsi-gekon-williamsa-perla-w-swiecie-terrarystyki" target="_blank">Więcej o gekonie williamsa</a>
+            <a href="https://www.terrarium.com.pl/gekko-badenii-gekon-ulikowskiego-gekon-zlocisty/" target="_blank">Więcej o gekonie złocistym</a>
+            <a href="https://www.terrarium.com.pl/gekko-gecko-gekon-toke/" target="_blank">Więcej o gekonie toke</a>
+        </nav>
+    </main>
+
+    <footer class="footer">
+        <p>Aleksandra Milewska | 2ta</p>
+    </footer>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+</html>

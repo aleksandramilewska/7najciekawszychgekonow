@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Aleksandra Milewska">
+    <meta name="description" content="Dodatkowe informacje o gekonach: porównanie gatunków, ciekawostki, multimedia i mapa.">
+    <meta name="keywords" content="gekony, ciekawostki, informacje, gady">
+    <title>Dodatkowe informacje - 7 Najciekawszych Gekonów</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">strona główna</a>
+        <a href="galeria.html">galeria</a>
+        <a href="ankieta.html">ankieta</a>
+        <a href="dodatek.html" class="active">dodatkowe informacje</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <span></span>
+        </a>
+    </div>
+
+    <header class="header">
+        <div class="logo">GEKON</div>
+    </header>
+    <main>
+        <h1>Dodatkowe informacje</h1>
+
+        <h2>Porównanie gatunków</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Gatunek</th>
+                        <th>Pochodzenie</th>
+                        <th>Długość</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Gekon orzęsiony</td>
+                        <td>Nowa Kaledonia</td>
+                        <td>ok. 20 cm</td>
+                    </tr>
+                    <tr>
+                        <td>Gekon lamparci</td>
+                        <td>Azja (Afganistan, Pakistan)</td>
+                        <td>ok. 25 cm</td>
+                    </tr>
+                    <tr>
+                        <td>Gekon płaczący</td>
+                        <td>Rejon Pacyfiku</td>
+                        <td>ok. 10-13 cm</td>
+                    </tr>
+                    <tr>
+                        <td>Gekon turecki</td>
+                        <td>Bliski Wschód, Afryka Północna</td>
+                        <td>ok. 15 cm</td>
+                    </tr>
+                    <tr>
+                        <td>Gekon williamsa</td>
+                        <td>Madagaskar</td>
+                        <td>ok. 9 cm</td>
+                    </tr>
+                    <tr>
+                        <td>Gekon złocisty</td>
+                        <td>Madagaskar</td>
+                        <td>ok. 13 cm</td>
+                    </tr>
+                    <tr>
+                        <td>Gekon toke</td>
+                        <td>Południowo-wschodnia Azja</td>
+                        <td>ok. 35 cm</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>Ciekawostki</h2>
+        <ul class="ciekawostki-lista">
+            <li><strong>Gekon orzęsiony</strong> nie ma powiek, więc czyści swoje oczy językiem.</li>
+            <li><strong>Gekon lamparci</strong> to jedno z niewielu jaszczurek, które mają ruchome powieki.</li>
+            <li><strong>Gekon płaczący</strong> może rozmnażać się bez udziału samców (partenogeneza).</li>
+            <li><strong>Gekon turecki</strong> doskonale wchodzi po gładkich powierzchniach, nawet szybie.</li>
+            <li><strong>Gekon williamsa</strong> jest aktywny w ciągu dnia, w przeciwieństwie do większości gekonów.</li>
+            <li><strong>Gekon złocisty</strong> swoją nazwę zawdzięcza złocistym plamkom na skórze.</li>
+            <li><strong>Gekon toke</strong> jest znany ze swoich głośnych odgłosów, które przypominają dźwięk "toke-kay".</li>
+        </ul>
+
+        <div class="multimedia-container">
+            <div class="multimedia-item">
+                <h3>Film o gekonach lamparcich</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/u7vpURrUWm8?si=M0c1O1bpHUi5oJqB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="multimedia-item">
+                <h3>Dźwięki gekona toke</h3>
+                <audio controls>
+                    <source src="media/gekon-dzwiek.mp3" type="audio/mpeg">
+                    Twoja przeglądarka nie obsługuje audio.
+                </audio>
+            </div>
+        </div>
+
+        <div class="map-container">
+            <h2>Sklep terrarystcznny</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2449.1946299508086!2d20.6186559!3d52.130781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4719493bb973fda1%3A0xa2d65c09665b4622!2sGadziSklep.pl%20-%20Sklep%20Terrarystyczny!5e0!3m2!1spl!2spl!4v1765724828077!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Aleksandra Milewska | 2ta</p>
+    </footer>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+</html>

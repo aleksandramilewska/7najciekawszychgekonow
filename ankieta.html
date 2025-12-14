@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Aleksandra Milewska">
+    <meta name="description" content="Ankieta dotycząca strony o gekonach.">
+    <meta name="keywords" content="ankieta, gekony, opinia, formularz">
+    <title>Ankieta - 7 Najciekawszych Gekonów</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">strona główna</a>
+        <a href="galeria.html">galeria</a>
+        <a href="ankieta.html" class="active">ankieta</a>
+        <a href="dodatek.html">dodatkowe informacje</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <span></span>
+        </a>
+    </div>
+
+    <header class="header">
+        <div class="logo">GEKON</div>
+    </header>
+    <main>
+        <h1>Ankieta</h1>
+
+        <form action="#" method="post">
+            <label for="grafika">Czy podobała ci się strona o gekonach?</label>
+            <select id="grafika" name="grafika">
+                <option value="tak">Tak</option>
+                <option value="troche">Trochę</option>
+                <option value="nie">Nie</option>
+            </select>
+
+            <label for="ocena">Jak bardzo lubisz gekony w skali od 1 do 10?</label>
+            <input type="number" id="ocena" name="ocena" min="1" max="10" required>
+
+            <label>Który gatunek gekona podoba ci się najbardziej?</label>
+            <div>
+                <input type="radio" id="orzespiony" name="ulubiony" value="orzespiony" required>
+                <label for="orzespiony">Gekon orzęsiony</label><br>
+                <input type="radio" id="lamparci" name="ulubiony" value="lamparci">
+                <label for="lamparci">Gekon lamparci</label><br>
+                <input type="radio" id="placzacy" name="ulubiony" value="placzacy">
+                <label for="placzacy">Gekon płaczący</label><br>
+                <input type="radio" id="turecki" name="ulubiony" value="turecki">
+                <label for="turecki">Gekon turecki</label><br>
+                <input type="radio" id="williamsa" name="ulubiony" value="williamsa">
+                <label for="williamsa">Gekon williamsa</label><br>
+                <input type="radio" id="zlocisty" name="ulubiony" value="zlocisty">
+                <label for="zlocisty">Gekon złocisty</label><br>
+                <input type="radio" id="toke" name="ulubiony" value="toke">
+                <label for="toke">Gekon toke</label>
+            </div>
+
+            <label for="komentarz">Co najbardziej podobało ci się na mojej stronie?</label>
+            <textarea id="komentarz" name="komentarz" rows="4"></textarea>
+
+            <input type="submit" value="Wyślij">
+            <input type="reset" value="Wyczyść">
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p>Aleksandra Milewska | 2ta</p>
+    </footer>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+</html>
